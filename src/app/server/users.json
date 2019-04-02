@@ -1,0 +1,33 @@
+{
+  "users": [{
+      "username": "sinclaire",
+      "password": "2020",
+      "id": 1
+    },
+    {
+      "username": "nasah",
+      "password": "2030",
+      "id": 2
+    },
+    {
+      "username": "edwin",
+      "password": "2040",
+      "id": 3
+    },
+    {
+      "username": "lewis",
+      "password": "2050",
+      "id": 4
+    },
+    {
+      "username": "pastor",
+      "password": "2060",
+      "id": 5
+    },
+    {
+      "username": "germanus",
+      "password": "2070",
+      "id": 6
+    }
+  ]
+}

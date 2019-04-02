@@ -1,0 +1,21 @@
+<!-- <app-navigation></app-navigation> -->
+<div class="container">
+  <marquee behavior="left" direction="right">
+    <h1 id="CompanyName">LETS_INTERACT -- NETWORKING USERS WORLDWIDE</h1>
+  </marquee>
+  <!-- <mat-divider></mat-divider> -->
+  <h1 id="LoginHead">Please Enter User Details</h1><br>
+  <mat-divider></mat-divider>
+
+  <mat-form-field>
+    <mat-label>Username</mat-label>
+    <input matInput type="text" required>
+  </mat-form-field><br><br>
+
+  <mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput type="password" required>
+  </mat-form-field><br><br>
+  <mat-spinner *ngIf="loading"></mat-spinner>
+  <button id="next" mat-raised-button color="primary" disabled=true>Login</button>
+</div>
