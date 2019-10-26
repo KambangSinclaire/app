@@ -1,0 +1,36 @@
+/* .container {
+  margin: 0 auto;
+  margin: 0% 25%;
+  margin-top: 3%;
+}
+
+span {
+  margin-right: 5%;
+  padding: 10px;
+}
+
+a {
+  background-color: gold;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+a {
+  color: yellowgreen;
+}
+
+mat-icon {
+  cursor: pointer;
+}
+.tabLinks {
+  text-decoration: none;
+  font-size: 1rem;
+}
+#back_arrow {
+  font-size: 1.5rem;
+  color: indianred;
+}

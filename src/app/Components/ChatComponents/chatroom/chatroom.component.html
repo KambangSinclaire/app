@@ -1,0 +1,176 @@
+<!-- <body>
+
+  <mat-drawer-container class="container" autosize> -->
+
+<!-- Begining of side Navigation -->
+<!-- <mat-drawer #drawer class="sidenav"> -->
+<!-- Content of Side navigation -->
+<!-- <mat-icon>home</mat-icon>
+      <mat-card>
+        <mat-card-content>
+          Some content goes in mat-card-header
+          I lOVE MAT CARDS ALOT
+        </mat-card-content>
+      </mat-card> -->
+<!-- End of Content of Side navigation -->
+<!-- </mat-drawer> -->
+<!-- End of Side Navigation -->
+
+
+<!-- Begining of Main Content -->
+<!-- <div class="container"> -->
+
+<!-- Begining of Material Toolbar -->
+<!-- <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button mat-icon-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <span>
+            <h4> {{ username }} </h4>
+          </span>
+          <div class="moreMenu">
+            <a (click)="signOut()" mat-button>LogOut</a>
+            <button mat-icon-button [matMenuTriggerFor]="appMenu">
+              <mat-icon>more_vert</mat-icon>
+            </button></div>
+          <mat-menu #appMenu>
+            <button mat-menu-item>
+              <mat-icon>folder</mat-icon>
+              <span>Folder</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>update</mat-icon>
+              <span>Update Profile</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Delete</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>share</mat-icon>
+              <span>Share</span>
+            </button>
+          </mat-menu>
+        </mat-toolbar-row>
+
+      </mat-toolbar> -->
+<!-- End of Material Toolbar -->
+
+
+<!-- Opening of material Tabs  -->
+<!-- <mat-tab-group> -->
+<!-- Begining of Chats Tab -->
+<!-- <mat-tab label="Chats">
+          <ng-template matTabContent> -->
+<!-- Using Material grid list -->
+<!-- <mat-grid-list cols="5" rowHeight="2:1" gutterSize="2px">
+              <mat-grid-tile class="SenderDetails" colspan="2" rowspan="4">
+                <mat-grid-tile-header color="primary">Sender</mat-grid-tile-header>
+
+                <div class="messageContainer">
+                  <mat-form-field>
+                    <textarea matInput type="text" placeholder="Enter Message"></textarea>
+                  </mat-form-field>
+                  <span><button mat-icon-button (click)="sendMsg($event)">
+                      <mat-icon>send</mat-icon>
+                    </button></span>
+                </div>
+
+                <mat-grid-tile-footer color="primary">Like</mat-grid-tile-footer>
+              </mat-grid-tile>
+
+              <mat-grid-tile rowspan="4" colspan="3">
+                <mat-spinner *ngIf="showSpinner"></mat-spinner>
+
+                <mat-card class="replyMe">
+                  <mat-card-header>Group Chat</mat-card-header>
+                  <mat-card-content>
+                    <div class="responseContainer">
+
+                      <div>
+                        <ul class="output" hidden>
+                          <li></li>
+                        </ul>
+                      </div>
+                      <p class="typing"></p>
+
+                    </div>
+                    <mat-card-actions>
+                      <span>
+                        <mat-icon>repy</mat-icon>
+                      </span>
+                      <span>
+                        <mat-icon>thumb_up</mat-icon>
+                      </span>
+                    </mat-card-actions>
+                  </mat-card-content>
+                </mat-card><br><br>
+                <div class="displayAllMessage"></div> -->
+
+
+<!-- </mat-grid-tile>
+            </mat-grid-list> -->
+<!-- End of Material grid list -->
+<!-- </ng-template>
+        </mat-tab> -->
+<!-- End of Chats Tab -->
+
+<!-- Begining of Status Tab -->
+<!-- <mat-tab label="Status">
+          <ng-template matTabContent>
+            <mat-card id="messageReceived">message received is here to fit the designed element in the
+              template component
+            </mat-card>
+          </ng-template>
+        </mat-tab> -->
+<!-- End of Status Tab -->
+
+<!-- Begining of Info Tab -->
+<!-- <mat-tab label="Info">
+          <ng-template matTabContent>
+            <mat-list>
+              <mat-list-item>ITEMS HERE</mat-list-item>
+              <mat-list-item>ITEMS HERE</mat-list-item>
+              <mat-list-item>ITEMS HERE</mat-list-item>
+            </mat-list>
+          </ng-template>
+        </mat-tab> -->
+<!-- End of Info Tab -->
+
+<!-- </mat-tab-group>
+
+
+
+    </div>
+  </mat-drawer-container> -->
+
+
+
+
+
+
+
+
+<!-- </body> -->
+
+<body>
+
+
+  <div class="ReceivedMessageContainer card-body msg_card_body groupMessage">
+    <!-- {{messageReceived}} -->
+  </div>
+
+
+  <main class="messageGroup bg-info">
+
+    <mat-icon class="messageIconAdd" color="accent">add_circle_outline</mat-icon>
+
+    <input type="text" name="message" class="form-control text-center py-3" id="typeMessage"
+      placeholder=" type message">
+
+    <mat-icon class="messageIconSend" color="primary">send</mat-icon>
+    <!-- (click)="sendMsg($event)" -->
+
+  </main>
+</body>

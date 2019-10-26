@@ -1,0 +1,64 @@
+<div class="container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Create New User Account</mat-card-title>
+      <mat-card-subtitle>Please Enter Correct User Details</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img matCardImage src="Card wide image source"> -->
+    <mat-card-content>
+
+      <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input matInput type="text" name="" [(ngModel)]="firstName">
+      </mat-form-field>
+
+      <mat-form-field class="seperate">
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text" name="" [(ngModel)]="lastName">
+      </mat-form-field><br><br>
+
+
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput type="text" name="" [(ngModel)]="username">
+      </mat-form-field>
+
+      <mat-form-field class="seperate">
+        <mat-label>Alias</mat-label>
+        <input matInput type="text" name="" [(ngModel)]="alias">
+      </mat-form-field><br><br>
+
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" name="" [(ngModel)]="password">
+      </mat-form-field>
+
+      <mat-form-field class="seperate">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput type="password" name="" [(ngModel)]="Cpassword">
+      </mat-form-field><br><br>
+
+
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matInput type="" name="" [(ngModel)]="address">
+      </mat-form-field>
+      <mat-form-field class="seperate">
+        <mat-label>Contact_phone</mat-label>
+        <input matInput type="text" name="" [(ngModel)]="phone">
+        <mat-icon>phone</mat-icon>
+      </mat-form-field><br><br>
+
+      <mat-form-field>
+        <mat-label>Date Of Birth</mat-label>
+        <input matInput type="date" name="" [(ngModel)]="dateOfBirth">
+      </mat-form-field>
+
+
+    </mat-card-content>
+    <mat-card-actions align="start">
+      <button mat-button (click)="addUser($event)">Submit</button>
+    </mat-card-actions>
+
+  </mat-card>
+</div>

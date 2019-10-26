@@ -1,0 +1,111 @@
+<!-- <div class="container">
+  <mat-toolbar color="primary">
+    <span id="brand">LIA</span> -->
+<!-- <span><a [routerLink]="['/chat']" routerLinkActive="router-link-active" (click)="chat()" mat-raised-button
+        color="brown">Chat</a></span>
+    <span><a [routerLink]="['/status']" routerLinkActive="router-link-active" (click)="status()" mat-raised-button
+        color="brown">Status</a></span>
+    <span><a [routerLink]="['/info']" routerLinkActive="router-link-active" (click)="info()" mat-raised-button
+        color="brown">Info</a></span> -->
+<!-- Creating A Material Menu -->
+<!-- <mat-menu #appMenu="matMenu">
+      <a mat-menu-item>LogOut</a>
+      <a mat-menu-item>Search</a>
+      <a mat-menu-item>Settings</a>
+      <a mat-menu-item>About</a>
+    </mat-menu>
+    <button id="menu" mat-raised-button [matMenuTriggerFor]="appMenu">Click</button>
+  </mat-toolbar>
+  <mat-divider></mat-divider>
+  <mat-divider></mat-divider>
+  <mat-divider></mat-divider>
+
+</div> -->
+
+<!-- App Header -->
+<header>
+
+  <mat-toolbar color="primary" class="pt-4">
+    <mat-toolbar-row class="d-flex justify-content-around align-items-center">
+      <div class="brandBar">
+        <span class="text-uppercase" color="accent">Liachat</span>
+      </div>
+      <span (click)="showSearchSpace()">
+        <mat-icon *ngIf="!searchSpace">search</mat-icon>
+      </span>
+      <span>
+        <mat-form-field *ngIf="searchSpace">
+          <mat-icon matPrefix id="back_arrow" (click)="closeSearchBar()">arrow_back</mat-icon>
+          <input matInput type="text" class="text-center" placeholder="search">
+        </mat-form-field>
+      </span>
+      <span>
+        <mat-icon mat-button [matMenuTriggerFor]="settings">
+          more_vert
+        </mat-icon>
+      </span>
+
+      <mat-menu #settings="matMenu">
+        <a mat-menu-item href="#">
+          <mat-icon color="accent">add_circle</mat-icon>
+          New Broadcast
+        </a>
+        <a mat-menu-item href="#">
+          <mat-icon color="primary">share</mat-icon>
+          <span>Share</span>
+        </a>
+        <a mat-menu-item href="#">
+          <mat-icon color="primary">folder</mat-icon>
+          <span>Folder</span>
+        </a>
+        <a mat-menu-item href="#">
+          <mat-icon color="primary">update</mat-icon>
+          <span>Update Profile</span>
+        </a>
+        <a mat-menu-item href="#">
+          <mat-icon color="accent">delete</mat-icon>
+          <span>Delete</span>
+        </a>
+
+      </mat-menu>
+    </mat-toolbar-row>
+
+
+    <mat-toolbar-row *ngIf="!searchSpace" class="d-flex justify-content-around align-items-center">
+
+      <a [routerLink]="['/privateChats']" routerLinkActive="router-link-active">
+        <span>
+          <mat-icon>face</mat-icon>
+        </span>
+      </a>
+
+      <a [routerLink]="['/groups']" routerLinkActive="router-link-active">
+        <span>
+          <mat-icon>people</mat-icon>
+        </span>
+      </a>
+
+      <a [routerLink]="['/notifications']" routerLinkActive="router-link-active">
+        <span>
+          <mat-icon matBadge="5" matBadgeColor="accent">
+            notifications
+          </mat-icon>
+        </span>
+      </a>
+
+    </mat-toolbar-row>
+
+
+    <mat-toolbar-row class="bg-info">
+      <nav mat-tab-nav-bar color="accent">
+        <a mat-tab-link *ngFor="let tabLink of tabLinks" [routerLink]="tabLink.path" routerLinkActive
+          #rlaRef="routerLinkActive" [active]="rlaRef.isActive"
+          class="text-capitalize text-white font-weight-bold tabLinks">
+          {{tabLink.label}}
+        </a>
+      </nav>
+    </mat-toolbar-row>
+
+  </mat-toolbar>
+</header>
+<router-outlet></router-outlet>

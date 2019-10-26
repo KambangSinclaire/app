@@ -1,6 +1,11 @@
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+<body>
+
+  <app-header *ngIf="showHeader"></app-header>
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
+
+</body>
 
 
 <!-- <div class="form-group">

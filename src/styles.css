@@ -1,17 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-
-
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../assets/TECH_GENESIS.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("../src/assets/TECH_GENESIS.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
